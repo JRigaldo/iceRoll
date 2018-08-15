@@ -18,6 +18,7 @@ body {
 		"receipts"
 		"footer";
 	overflow-x: hidden;
+	color: #37474F;
 
 }
 
@@ -60,21 +61,22 @@ header img{
 
 section.presentation{
 	grid-area: presentation;
-	max-width: 1000px;
-	width: calc(100% - 4rem);
-	margin: 0 auto;
 }
 
 section.receipts{
 	grid-area: receipts;
-	max-width: 1000px;
-	width: calc(100% - 4rem);
-	margin: 0 auto;
 }
 
 footer{
 	grid-area: footer;
 }
+
+section.presentation, section.receipts, footer{
+	max-width: 1000px;
+	width: calc(100% - 4rem);
+	margin: 0 auto;
+}
+
 
 .home aside{
 	display: flex;
@@ -121,8 +123,14 @@ footer{
 }
 
 .row-2 div{
-	width: 350px;
+	margin: 0 auto;
+	max-width: 350px;
 	margin-left: 20px;
+}
+
+form .row-2{
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .home .presentation p {
@@ -212,6 +220,9 @@ strong{
 
 footer{
 	position: relative;
+	background: #FFFFFF;
+	border-radius: 5px;
+	margin-bottom: 40px;
 }
 
 .orange{
@@ -222,16 +233,16 @@ footer{
 
 
 form{
-	width: 80%;
 	margin: 0 auto;
 	display: block;
-	background: #CCC;
+
 }
 
 .field{
 	position: relative;
 	height: 72px;
 	padding: 16px 0 8px 0;
+	width: 100%;
 }
 
 .field-label{
@@ -244,7 +255,7 @@ form{
 	transform: translateY(24px);
 	transition: transform 0.3s, font-size 0.3s;
 	transform-origin: 0 50%;
-	color: #FFF8E1;
+	color: ;
 }
 
 .field-input{
@@ -293,6 +304,23 @@ form{
 	height: 32px;
 }
 
+
+.submit{
+	display: block;
+	margin: 40px auto 20px auto;
+	padding: 20px 40px;
+	color: #FFF;
+	background: #37474F;
+	text-transform: uppercase;
+	border-radius: 5px;
+	letter-spacing: 1px;
+}
+
+.submit:hover{
+	background: #F9B221;
+	color: #37474F;
+	transition: 0.3s;
+}
 
 
 
