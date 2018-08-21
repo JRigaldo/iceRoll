@@ -1,0 +1,100 @@
+@media screen and (max-width: 500px){
+
+	section.presentation, section.receipts, footer{
+		width: calc(100% - 1.5rem);
+	}
+
+	.row div{
+		width: 100%;
+	}
+
+	.home article{
+		margin: 10px 0;
+	}
+
+	.home .receipts .card{
+		margin-bottom: 0;
+	}
+
+	.home .receipts .card{
+		width: 100%;
+	}
+
+	.chocolat-mobile{
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 170vh;
+		background: url('../img/chocolat-mobile.png') no-repeat scroll center; 
+
+	}
+
+	.banane-mobile{
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: -70px;
+	    right: 0;
+	    width: 200px;
+	    height: 285px;
+		background: url('../img/banane-mobile.png') no-repeat scroll center; 
+	}
+
+	.fraise-mobile{
+		display: block;
+		position: absolute;
+		z-index: -1;
+		bottom: -150px;
+	    right: 0;
+	    width: 30px;
+	    height: 150px;
+		background: url('../img/fraise-mobile.png') no-repeat scroll center;
+	}
+
+}
+
+@media screen and (min-width: 500px){
+	.chocolat-desktop{
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		max-width: 585px;
+		height: 170vh;
+		background: url('../img/chocolat-desktop.png') no-repeat scroll center; 
+	}
+
+	.banane-desktop{
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: -53px;
+		right: -45px;
+		width: 370px;
+		height: 285px;
+		background: url('../img/banane-desktop.png') no-repeat scroll center; 
+	}
+
+	.fraise-desktop{
+		display: block;
+		position: absolute;
+		z-index: -1;
+		bottom: 30px;
+	    right: 0;
+	    width: 200px;
+	    height: 185px;
+		background: url('../img/fraise-desktop.png') no-repeat scroll center;
+	}
+}
+
+/*.orange{
+	position: absolute;
+	top: 0;
+	z-index: -2;
+}*/
+
