@@ -39,16 +39,18 @@ app.post('/send', (req, res) => {
 	`;
 
 	// create reusable transporter object using the default SMTP transport
-	// info@iceroll-lausanne.com
-	// ete2018iceroll
     let transporter = nodemailer.createTransport({
-    	host: 'mail.infomaniak.com',
-        port: 587,
-        secure: false, // true for 465, false for other ports
-        auth: {
-            user: 'info@iceroll-lausanne.ch', // generated ethereal user
-            pass: 'ete2018iceroll' // generated ethereal password
-        },
+    	host: 'smtp.gmail.com',
+	    port: 465,
+	    secure: true,
+	    auth: {
+	        type: 'OAuth2',
+	        user: 'rigaldo.jeremy@gmail.com',
+	        clientId: '1049785856624-fl07c1of7curg7rlrc2ha7eic8a45bd8.apps.googleusercontent.com',
+	        clientSecret: 'gh--4ZsrG9Jehpd_JZiKrCDO',
+	        refreshToken: '1/NQtHmj2LxiB2yVz04UygLPnzzOk0tMWxBg2YJ5AhSyc',
+	        accessToken: 'ya29.GlsABtivz1hiZMe6tloDazRslswJDxB9Ox89lVO-DW4jDnD_6rMjjBMd1-IS0zpcEaxCQnA6VlvQcCVzWXjqO4joKjuj2B12e5TGQLZJM95LDN2TSWT7qusThhiH'
+	    },
         tls: {
         	rejectUnauthorized: false
         }
@@ -56,7 +58,7 @@ app.post('/send', (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Nodemailer Contact" <info@iceroll-lausanne.ch>', // sender address
+        from: '"Nodemailer Contact" <choclate.choclate76@gmail.com>', // sender address
         to: 'rigaldo.jeremy@gmail.com', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body

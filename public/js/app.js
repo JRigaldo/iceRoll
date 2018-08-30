@@ -13,4 +13,5 @@ jQuery(function($){
 		}
 		$parent.removeClass('is-focused');
 	});
+	$('input[id=date]').dateDropper();
 });
