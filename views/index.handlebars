@@ -133,7 +133,8 @@
 				<div class="row">
 					<div class="field">
 						<label for="name" class="field-label">Nom</label>
-						<input type="text" id="name" name="name" class="field-input" >
+						<input type="text" id="name" name="name" class="field-input" required pattern="^[0-9]*$">
+						<span>Vous devez rentrer des chiffres</span>
 					</div>
 					<div class="field">
 						<label for="vorname" class="field-label">Prénom</label>
