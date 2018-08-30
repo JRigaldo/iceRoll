@@ -302,6 +302,10 @@ input + span{
 input:focus:invalid + span{
 	display: inline-block;
 	color: #e83b4d;
+	position: absolute;
+	bottom: -12px;
+	right: 0;
+	font-size: 0.8em;
 }
 
 

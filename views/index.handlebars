@@ -133,18 +133,20 @@
 				<div class="row">
 					<div class="field">
 						<label for="name" class="field-label">Nom</label>
-						<input type="text" id="name" name="name" class="field-input" required pattern="^[0-9]*$">
-						<span>Vous devez rentrer des chiffres</span>
+						<input type="text" id="name" name="name" class="field-input" required pattern="^[a-zA-Z]+$">
+						<span>Vous devez rentrer des lettres</span>
 					</div>
 					<div class="field">
 						<label for="vorname" class="field-label">Prénom</label>
-						<input type="text" id="vorname" name="vorname" class="field-input" >
+						<input type="text" id="vorname" name="vorname" class="field-input" required pattern="^[a-zA-Z]+$">
+						<span>Vous devez rentrer des lettres</span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="field">
 						<label for="phone" class="field-label">Téléphone</label>
-						<input type="text" id="phone" name="phone" class="field-input" size="10" pattern="^[0-9]*$">
+						<input type="text" id="phone" name="phone" class="field-input" size="10" pattern="/^(\+41 |0)[1-9]( \d\d){4}$/" required>
+						<span>+41 XX XXX XX XX</span>
 					</div>
 					<div class="field">
 						<label for="email" class="field-label">Email</label>
