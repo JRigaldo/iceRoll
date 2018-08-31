@@ -16,7 +16,7 @@
 	<header>
  		<span class="logo"><img src="../public/svg/logoIceRoll_logo_raspberry_2.svg" alt="logo ice roll lausanne"></span>
  		<div class="network">
- 			<a href="" class="button-svg">
+ 			<a href="tel:+41786725402" class="button-svg">
 				<button>
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 					<title>phone</title>
@@ -27,7 +27,7 @@
 
 				</button>
 			</a>
-			<a href="" class="button-svg">
+			<a href="mailto:info@iceroll-lausanne.ch" class="button-svg">
 				<button>
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 					<title>Mail</title>
@@ -133,34 +133,37 @@
 				<div class="row">
 					<div class="field">
 						<label for="name" class="field-label">Nom</label>
-						<input type="text" id="name" name="name" class="field-input" required pattern="^[a-zA-Z]+$">
+						<input type="text" id="name" name="name" class="field-input"  pattern="^[a-zA-Z|\s]{0,30}$" required>
 						<span>Vous devez rentrer des lettres</span>
 					</div>
 					<div class="field">
 						<label for="vorname" class="field-label">Prénom</label>
-						<input type="text" id="vorname" name="vorname" class="field-input" required pattern="^[a-zA-Z]+$">
+						<input type="text" id="vorname" name="vorname" class="field-input"  pattern="^[a-zA-Z|\s]{0,30}$" required>
 						<span>Vous devez rentrer des lettres</span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="field">
 						<label for="phone" class="field-label">Téléphone</label>
-						<input type="text" id="phone" name="phone" class="field-input" size="10" pattern="/^(\+41 |0)[1-9]( \d\d){4}$/" required>
+						<input type="text" id="phone" name="phone" class="field-input" size="10" pattern="^[\+|0]{0,3}[0-9\s]{0,15}" required>
 						<span>+41 XX XXX XX XX</span>
 					</div>
 					<div class="field">
 						<label for="email" class="field-label">Email</label>
-						<input type="email" id="email" name="email" class="field-input" >
+						<input type="email" id="email" name="email" class="field-input" required >
+						<span>Inscrivez une adresse email valide</span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="field">
 						<label for="numberPeople" class="field-label">Nombre de convives</label>
-						<input type="text" id="numberPeople" name="numberPeople" class="field-input" pattern="^[0-9]*$">
+						<input type="text" id="numberPeople" name="numberPeople" class="field-input" pattern="^[0-9]{0,6}" required >
+						<span>Mettez un nombre</span>
 					</div>
 					<div class="field">
 						<label for="place" class="field-label">Lieu</label>
-						<input type="text" id="place" name="place" class="field-input" >
+						<input type="text" id="place" name="place" class="field-input" pattern="^[a-zA-Z|\s]{0,30}$" required >
+						<span>Mettez une ville</span>
 					</div>
 				</div>
 				<div class="row">
@@ -170,7 +173,8 @@
 					</div>
 					<div class="field">
 						<label for="duration" class="field-label">Durée</label>
-						<input type="text" id="duration" name="duration" class="field-input">
+						<input type="text" id="duration" name="duration" class="field-input" required >
+						<span>Mettez un nombre</span>
 					</div>
 				</div>
 				<div class="textarea">

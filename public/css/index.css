@@ -308,6 +308,10 @@ input:focus:invalid + span{
 	font-size: 0.8em;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
 
 .field{
 	position: relative;
@@ -394,7 +398,7 @@ footer button{
 }
 
 footer button:hover{
-	background: #F9B221;
+	background: #e83b4d;
 	color: #37474F;
 	transition: 0.3s;
 }
